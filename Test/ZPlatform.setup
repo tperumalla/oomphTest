@@ -41,7 +41,7 @@
   <setupTask
       xsi:type="setup:VariableTask"
       name="git.clone.remoteURI"
-      defaultValue="git@github.com:ZafinLabs/zplatform.git"
+      defaultValue="git@bitbucket.org:zafinworks/zplatform.git"
       label="Github repository">
     <description>Choose from the available Github URIs</description>
   </setupTask>

@@ -144,22 +144,7 @@
   <setupTask
       xsi:type="git:GitCloneTask"
       id="git.clone"
-      remoteURI="ZafinLabs/zplatform">
-    <annotation
-        source="http://www.eclipse.org/oomph/setup/InducedChoices">
-      <detail
-          key="inherit">
-        <value>github.remoteURIs</value>
-      </detail>
-      <detail
-          key="label">
-        <value>${scope.project.label} Github repository</value>
-      </detail>
-      <detail
-          key="target">
-        <value>remoteURI</value>
-      </detail>
-    </annotation>
+      remoteURI="git@bitbucket.org:zafinworks/zplatform.git">
     <description>${scope.project.label}</description>
   </setupTask>
   <setupTask
@@ -1439,8 +1424,8 @@
       <setup:PreferenceTask
           key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.javadoc"
           value="true"
-          xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
-          xmlns:xmi="http://www.omg.org/XMI"/>
+          xmlns:xmi="http://www.omg.org/XMI"
+          xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"/>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
@@ -1950,7 +1935,7 @@
           value="true"/>
       <setup:PreferenceTask
           key="/instance/org.eclipse.jdt.ui/editor_folding_default_methods"
-          value="true"/>    
+          value="true"/>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
@@ -1980,7 +1965,6 @@
           key="/instance/org.eclipse.wst.xml.core/lineWidth"
           value="80"/>
     </setupTask>
-    
   </setupTask>
   <setupTask
       xsi:type="maven:MavenImportTask"
@@ -2107,4 +2091,3 @@
       href="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']"/>
   <description>ZPlatform provides very cool stuff</description>
 </setup:Project>
-

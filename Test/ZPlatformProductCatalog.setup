@@ -10,7 +10,7 @@
   <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.redirection.zplatform_products"
-      value="=index:/redirectable.products.setup->https://bitbucket.org/zafinworks/zplatform/raw/a24276309bbc7a00cb4e5b67e9ab5e32cf8f5722/setups/ZPlatformProductCatalog.setup"
+      value="=index:/redirectable.products.setup->https://raw.githubusercontent.com/tperumalla/oomphTest/master/Test/ZPlatformProductCatalog.setup"
       vm="true">
     <description>Add redirect</description>
   </setupTask>
